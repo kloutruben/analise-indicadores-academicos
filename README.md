@@ -1,46 +1,82 @@
 # Análise de Indicadores Académicos
 
-**Projeto de portfólio de Data Analytics | Excel, Power Query, Power BI e DAX**
+### Projeto de Portfólio | Data Analytics
 
-> **Aviso:** os dados são inteiramente sintéticos e gerados para aprendizagem. Não representam uma instituição real, nem constituem experiência profissional remunerada.
+## Sobre o projeto
 
-## Problema de negócio
-Uma instituição de ensino fictícia pretende acompanhar taxas de aprovação, desempenho por curso e disciplina, assiduidade e evolução semestral.
+Este projeto tem como objetivo analisar indicadores de desempenho académico de uma instituição de ensino fictícia, utilizando Microsoft Excel para transformar dados em informações relevantes para a tomada de decisões.
 
-## Perguntas de negócio
-1. Qual a taxa de aprovação por ano e semestre?
-2. Quais cursos e disciplinas apresentam menor desempenho?
-3. Como varia o desempenho com a assiduidade?
-4. Quais tendências merecem intervenção?
+A análise abrange 3.240 registos sintéticos de avaliações, distribuídos por três cursos e seis semestres, entre 2024 e 2026.
 
-## Dataset
-`dados/brutos/avaliacoes_sinteticas.csv` — registo por estudante, disciplina e período; dados sintéticos e reproduzíveis com semente 29. A mesma pessoa pode aparecer em várias disciplinas e períodos. Não somar linhas como se fossem estudantes únicos.
+## Objetivos
 
-## Regras dos indicadores
-- Aprovação: nota_final >= 10 (escala 0–20).
-- Taxa de aprovação: avaliações aprovadas / total de avaliações válidas.
-- Média das notas: média das notas válidas, sem agregação prévia.
-- Estudantes únicos: contagem distinta de `id_estudante`.
-- Assiduidade média: média simples da assiduidade por avaliação; não representa presença institucional agregada.
+- Analisar as taxas de aprovação e reprovação.
+- Comparar o desempenho académico entre cursos.
+- Investigar a associação entre assiduidade e notas.
+- Avaliar a evolução temporal dos resultados.
+- Desenvolver um dashboard executivo para acompanhamento de KPIs.
 
-## Como reproduzir
-1. Importar o CSV no Excel (Dados > De Texto/CSV) ou Power BI (Obter dados > Texto/CSV).
-2. Confirmar tipos: IDs e categorias como texto; ano/semestre inteiros; nota e assiduidade decimais.
-3. Remover duplicados apenas se todas as colunas da chave (id_estudante, ano, semestre, disciplina) coincidirem; verificar valores em falta e intervalos.
-4. Criar medidas DAX conforme `documentacao/medidas_dax.md`.
-5. Criar cartões de KPIs, barras por curso/disciplina, linha por período e dispersão de assiduidade versus nota.
-6. Registar decisões, prints do dashboard e conclusões; adicionar o ficheiro `.pbix` após construção.
+## Ferramentas e competências
 
-## Estrutura
-- `dados/`: dados brutos e tratados
-- `scripts/`: gerador dos dados
-- `excel/`: análises em Excel (a desenvolver)
-- `powerbi/`: relatório Power BI (a desenvolver)
-- `imagens/`: capturas do dashboard (a desenvolver)
-- `documentacao/`: dicionário, metodologia, DAX e insights
+- Microsoft Excel
+- Tabelas Dinâmicas
+- Fórmulas e funções
+- Validação de dados
+- Estatística descritiva
+- Visualização de dados
+- Git e GitHub
 
-## Estado
-**Em desenvolvimento.** Dados de exemplo e documentação inicial concluídos; dashboard e validação de resultados pendentes.
+## Principais indicadores
+
+| Indicador | Resultado |
+|---|---|
+| Avaliações analisadas | 3.240 |
+| Taxa de aprovação | 59,38% |
+| Nota média | 10,88/20 |
+| Assiduidade média | 72,46% |
+
+## Dashboard Executivo
+
+![Dashboard de Indicadores Académicos](imagens/dashboard_excel.png)
+
+## Principais insights
+
+**1. Desempenho por curso**
+
+Os três cursos apresentaram taxas de aprovação próximas de 59%, com Gestão a registar o valor mais elevado.
+
+**2. Assiduidade e desempenho**
+
+As avaliações com alta assiduidade apresentaram nota média de 12,60, enquanto as de baixa assiduidade apresentaram 8,29.
+
+**3. Evolução temporal**
+
+A taxa de aprovação variou entre 56,11% e 62,22% durante os seis semestres analisados.
+
+## Metodologia
+
+1. Preparação e exploração dos dados.
+2. Verificação da qualidade e consistência.
+3. Construção de indicadores académicos.
+4. Análise com Tabelas Dinâmicas.
+5. Criação de gráficos e dashboard.
+6. Interpretação e documentação dos resultados.
+
+## Limitações
+
+Os dados são sintéticos e foram utilizados exclusivamente para fins educativos e de demonstração de competências.
+
+As análises são descritivas e não estabelecem relações causais.
+
+## Próximas melhorias
+
+- Desenvolvimento de dashboard em Power BI.
+- Modelação de dados e medidas DAX.
+- Introdução de análises com SQL.
+- Automatização do processo de atualização.
 
 ## Autor
-Klout Ruben | Portfólio de Data Analyst
+
+**Ruben Kuyota**
+
+Projeto desenvolvido para demonstrar competências práticas em análise de dados e Business Intelligence.
