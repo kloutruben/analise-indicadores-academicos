@@ -120,3 +120,51 @@ A análise por categorias não substitui uma análise de correlação entre as v
 ### Ferramentas utilizadas
 
 Microsoft Excel, fórmulas condicionais, Tabelas Dinâmicas, estatística descritiva e visualização de dados.
+
+## Insight 03 — Evolução Temporal do Desempenho Académico (2024–2026)
+
+### Objetivo
+
+Analisar a evolução semestral da taxa de aprovação académica entre 2024 e 2026, identificando períodos de melhor e pior desempenho.
+
+### Metodologia
+
+Foram analisados 3.240 registos sintéticos de avaliações académicas, distribuídos por seis semestres.
+
+A taxa de aprovação foi calculada através da fórmula:
+
+**Taxa de aprovação = (Avaliações aprovadas / Total de avaliações) × 100**
+
+### Resultados
+
+| Período | Taxa de aprovação |
+|---|---:|
+| 2024 — S1 | 62,22% |
+| 2024 — S2 | 59,44% |
+| 2025 — S1 | 56,11% |
+| 2025 — S2 | 60,00% |
+| 2026 — S1 | 60,37% |
+| 2026 — S2 | 58,15% |
+
+### Principais descobertas
+
+O primeiro semestre de 2024 apresentou a maior taxa de aprovação (62,22%), enquanto o primeiro semestre de 2025 apresentou a menor (56,11%).
+
+A diferença entre o primeiro e o último semestre analisados foi de -4,07 pontos percentuais.
+
+Os resultados apresentam oscilações, sem evidência descritiva de uma tendência contínua de crescimento ou diminuição.
+
+### Recomendações
+
+1. Monitorizar as taxas de aprovação por semestre.
+2. Investigar os fatores associados ao desempenho mais baixo em 2025 — S1.
+3. Comparar os resultados por curso e disciplina.
+4. Implementar um dashboard para acompanhamento periódico dos indicadores.
+
+### Limitações
+
+Os dados são sintéticos e não representam uma instituição real. A análise é descritiva e não permite estabelecer relações causais.
+
+### Ferramentas utilizadas
+
+Microsoft Excel, Tabelas Dinâmicas, fórmulas condicionais e gráficos de linhas.
